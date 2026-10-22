@@ -139,6 +139,17 @@ a{
   .screenshot-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+
+
+.brand img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
 }
 
 @media (max-width: 480px) {

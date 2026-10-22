@@ -518,7 +518,6 @@ a {
   margin: 28px 0 17px;
   display: grid;
   place-items: center;
-  background: linear-gradient(145deg, #0878f9, #06b6d4);
   box-shadow: 0 9px 26px rgba(0, 153, 255, .2);
   border: 1px solid rgba(255, 255, 255, .25);
   position: relative;

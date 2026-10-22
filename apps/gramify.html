@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#070b14">
 
-  <meta name="description" content="Kenali Gramify, aplikasi Android dari Xiaogi Developer. Lihat informasi aplikasi dan screenshot tampilannya.">
+  <meta name="description" content="Kenali Gramify, aplikasi Android dari Xiaogi Developer untuk mencatat barang, berat, dan harga. Lihat fitur dan akses awal Gramify.">
 
   <title>Gramify — Xiaogi Developer</title>
 
@@ -53,11 +53,7 @@
       place-items: center;
       overflow: hidden;
       flex-shrink: 0;
-      background: linear-gradient(
-        145deg,
-        #0878f9,
-        #06b6d4
-      );
+      background: linear-gradient(145deg, #0878f9, #06b6d4);
       border: 1px solid rgba(125, 211, 252, .3);
       box-shadow: 0 15px 45px rgba(8, 120, 249, .2);
     }
@@ -93,6 +89,51 @@
       max-width: 650px;
     }
 
+    /* TOMBOL AKSES AWAL */
+
+    .early-access-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 18px;
+      padding: 13px 22px;
+      border: 1px solid rgba(125, 211, 252, .35);
+      border-radius: 12px;
+      background: linear-gradient(135deg, #0878f9, #06b6d4);
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(8, 120, 249, .2);
+      transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        filter .2s ease;
+    }
+
+    .early-access-btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.08);
+      box-shadow: 0 12px 30px rgba(8, 120, 249, .35);
+    }
+
+    .early-access-btn:focus-visible {
+      outline: 2px solid #7dd3fc;
+      outline-offset: 4px;
+    }
+
+    .early-access-btn .arrow {
+      font-size: 17px;
+      line-height: 1;
+    }
+
+    .access-caption {
+      margin-top: 10px;
+      font-size: 11px !important;
+      color: var(--muted);
+    }
+
     /* PANEL INFORMASI */
 
     .detail-info {
@@ -110,6 +151,13 @@
       font-size: 24px;
       font-weight: 600;
       margin: 0;
+    }
+
+    .detail-info h3 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      margin: 24px 0 8px;
     }
 
     .detail-info ul {
@@ -201,6 +249,11 @@
         letter-spacing: -1.5px;
       }
 
+      .early-access-btn {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
       .detail-info {
         margin-top: 40px;
         padding: 22px;
@@ -269,9 +322,25 @@
         </h1>
 
         <p>
-          Kenali Gramify, salah satu aplikasi Android yang
-          dikembangkan oleh Xiaogi Developer. Jelajahi tampilan
-          aplikasi dan informasi Gramify di halaman ini.
+          Kenali Gramify, aplikasi Android untuk membantu
+          pencatatan barang, berat, dan harga secara praktis.
+          Jelajahi fitur dan tampilan Gramify di halaman ini.
+        </p>
+
+        <!-- TOMBOL DOWNLOAD AKSES AWAL -->
+
+        <a
+          class="early-access-btn"
+          href="https://nwokmd.github.io/gramify-tester/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Download Akses Awal</span>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <p class="access-caption">
+          Ikuti petunjuk di halaman berikutnya untuk mendapatkan akses tester.
         </p>
       </div>
 
@@ -284,35 +353,69 @@
       <h2>Tentang Gramify</h2>
 
       <p>
-        Gramify: Catat Berat & Harga
-        
-        Kelola pencatatan barang dengan lebih mudah dan praktis bersama Gramify! 📦
-        
-        Gramify adalah aplikasi pencatatan barang yang membantu Anda mencatat kategori barang, berat, harga per gram, serta menghitung total nilai barang secara otomatis. Cocok untuk membantu aktivitas pencatatan stok atau barang sehari-hari agar lebih teratur dan mudah dipantau.
-        
-        ✨ **FITUR UNGGULAN GRAMIFY**
-        
-        📋 **Pencatatan Barang yang Praktis**
-        Catat barang dengan memasukkan kategori, berat, dan harga per gram. Anda juga dapat menggunakan nama kategori sesuai kebutuhan.
-        
-        ⚖️ **Hitung Berat dan Total Harga Otomatis**
-        Gramify membantu menghitung total harga berdasarkan berat barang dan harga per gram, sehingga Anda tidak perlu menghitungnya secara manual.
-        
-        📊 **Ringkasan Pencatatan Harian**
-        Lihat jumlah barang, total berat, dan total harga dari pencatatan hari ini dalam satu tampilan yang mudah dipahami.
-        
-        🗂️ **Riwayat Pencatatan**
-        Periksa kembali catatan barang yang sudah disimpan berdasarkan tanggal dan waktu pencatatan. Data lebih mudah ditelusuri saat Anda membutuhkannya.
-        
-        🔐 **Hubungkan Akun Google**
-        Masuk menggunakan akun Google untuk mengakses fitur aplikasi dan membantu menghubungkan data Anda dengan akun. Fitur penyimpanan data mengikuti sistem yang tersedia di aplikasi.
-        
-        💡 **Mudah Digunakan**
-        Tampilan sederhana dan praktis membantu Anda mencatat barang tanpa proses yang rumit.
-        
-        🎯 **COCOK UNTUK BERBAGAI KEBUTUHAN**
-        
-        Gramify dapat digunakan untuk membantu pencatatan barang berdasarkan berat dan harga, misalnya: 
+        <strong>Gramify: Catat Berat &amp; Harga</strong>
+      </p>
+
+      <p>
+        Kelola pencatatan barang dengan lebih mudah dan praktis
+        bersama Gramify! 📦
+      </p>
+
+      <p>
+        Gramify adalah aplikasi pencatatan barang yang membantu
+        Anda mencatat kategori barang, berat, harga per gram,
+        serta menghitung total nilai barang secara otomatis.
+        Cocok untuk membantu aktivitas pencatatan stok atau
+        barang sehari-hari agar lebih teratur dan mudah dipantau.
+      </p>
+
+      <h3>✨ Fitur Unggulan Gramify</h3>
+
+      <ul>
+        <li>
+          <strong>Pencatatan Barang yang Praktis</strong><br>
+          Catat barang dengan memasukkan kategori, berat, dan
+          harga per gram. Anda juga dapat menggunakan nama
+          kategori sesuai kebutuhan.
+        </li>
+
+        <li>
+          <strong>Hitung Berat dan Total Harga Otomatis</strong><br>
+          Gramify membantu menghitung total harga berdasarkan
+          berat barang dan harga per gram, sehingga Anda tidak
+          perlu menghitungnya secara manual.
+        </li>
+
+        <li>
+          <strong>Ringkasan Pencatatan Harian</strong><br>
+          Lihat jumlah barang, total berat, dan total harga
+          dari pencatatan hari ini dalam satu tampilan.
+        </li>
+
+        <li>
+          <strong>Riwayat Pencatatan</strong><br>
+          Periksa kembali catatan barang berdasarkan tanggal
+          dan waktu pencatatan.
+        </li>
+
+        <li>
+          <strong>Hubungkan Akun Google</strong><br>
+          Masuk menggunakan akun Google untuk mengakses fitur
+          aplikasi sesuai sistem autentikasi yang tersedia.
+        </li>
+
+        <li>
+          <strong>Mudah Digunakan</strong><br>
+          Tampilan sederhana dan praktis membantu Anda
+          mencatat barang tanpa proses yang rumit.
+        </li>
+      </ul>
+
+      <h3>🎯 Cocok untuk Berbagai Kebutuhan</h3>
+
+      <p>
+        Gramify dapat digunakan untuk membantu pencatatan barang
+        berdasarkan berat dan harga, misalnya:
       </p>
 
       <ul>
@@ -322,10 +425,14 @@
         <li>Dokumentasi pencatatan barang harian.</li>
       </ul>
 
-Dengan Gramify, pencatatan barang menjadi lebih rapi, praktis, dan mudah diperiksa kembali.
+      <p>
+        Dengan Gramify, pencatatan barang menjadi lebih rapi,
+        praktis, dan mudah diperiksa kembali.
+      </p>
 
       <p class="note">
-        Gramify adalah aplikasi pencatatan barang. Aplikasi ini bukan layanan perbankan, pinjaman, pembayaran, atau investasi.
+        Gramify adalah aplikasi pencatatan barang. Aplikasi ini
+        bukan layanan perbankan, pinjaman, pembayaran, atau investasi.
       </p>
 
     </section>
